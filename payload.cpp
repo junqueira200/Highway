@@ -13,10 +13,6 @@
 #include "hwy/detect_targets.h"
 // If N_NEON_BF16 is not supported by
 // the compiler, do NOT allow bytecode
-#ifndef N_NEON_BF16
-#undef HWY_NEON_BF16
-#define HWY_NEON_BF16 0
-#endif
 #undef HWY_TARGET_INCLUDE
 
 // then set it to the name of this very file
